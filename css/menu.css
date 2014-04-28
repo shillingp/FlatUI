@@ -1,0 +1,42 @@
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    overflow: inherit !important;
+}
+.menu ul li {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin-left: 60px;
+}
+.menu ul li p {
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 900;
+    color: #b9b9b9;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    position: relative;
+}
+.menu ul li ::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 11px;
+    left: -32px;
+    background: #3d3d3d;
+}
+.menu ul li:first-child ::before {
+    display: none;
+}
+.menu ul li.active p,
+.menu ul li p:hover {
+    color: #ff6760;
+}
