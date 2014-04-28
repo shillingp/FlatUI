@@ -1,0 +1,45 @@
+.caption { margin: 50px auto;}
+.caption.center { text-align: center;}
+.caption.right { text-align: right;}
+.caption strong { font-weight: 900;}
+.caption .color { color: #ff6760;}
+.caption h1 { font-size: 60px;}
+.caption h2 { font-size: 40px;}
+.caption h1, .caption h2 {
+    position: relative;
+    margin: 0;
+    padding-bottom: 29px;
+    color: #d9d9d9;
+    font-weight: 300;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+
+
+.rowbox .row {}
+.rowbox .row i {}
+.rowbox .row i::before {
+    width: 120px;
+    margin: 0 20px;
+    font-size: 120px;
+    font-style: normal;
+    line-height: 1.2;
+    text-align: center;
+    float: left;
+}
+.rowbox .rowtext {}
+
+.rowbox .row i,
+.rowbox .rowtext h3 {
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+
+.row:hover {
+    color: #ff6760;
+}
+.row:hover .rowtext p {
+    color: #616161;
+}
