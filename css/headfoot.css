@@ -27,8 +27,12 @@ footer {
     color: #bebebe;
 }
 footer .inner {
-    padding: 25px 0;
+    padding: 10px 0;
 }
 footer .inner p {
-    padding: 0;
+    text-align: center;
+}
+footer .inner a {
+    text-decoration: underline;
+    color: inherit;
 }
