@@ -6,29 +6,19 @@ header {
     color: #262626;
     display: block;
 }
-header * {
-    margin: 0;
-}
-header .inner {
-    padding: 35px 0 29px;
-}
+header h1, header p { margin: 0!important;}
+header .inner { padding: 35px 0 29px;}
 header .logo {
     float: left;
     color: #fff;
 }
-header .menu {
-    float: right;
-}
-header .clear {
-    clear: both;
-}
+header .menu { float: right;}
+header .clear { clear: both;}
 
-footer {
-    color: #bebebe;
-}
-footer .inner {
-    padding: 25px 0;
-}
-footer .inner p {
-    padding: 0;
+footer { color: #bebebe;}
+footer .inner { padding: 10px 0;}
+footer .inner p { text-align: center;}
+footer .inner a {
+    text-decoration: underline;
+    color: inherit;
 }
