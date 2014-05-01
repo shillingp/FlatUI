@@ -41,9 +41,7 @@
     margin-bottom: 0px;
     font-size: 20px;
 }
-.rowbox .row p {
-    line-height: 1.5;
-}
+.rowbox .row p { line-height: 1.5;}
 .rowbox .row span,
 .rowbox .rowtext h3 {
     -webkit-transition: all 200ms ease-in;
@@ -52,3 +50,4 @@
 }
 .row:hover { color: #ff6760;}
 .row:hover .rowtext p { color: #616161;}
+

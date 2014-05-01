@@ -1,9 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,900);
 
 @font-face {
-    font-family: 'fontello';
-    src: url('../resources/fonts/fontello.woff') format('woff'),
-        url('../resources/fonts/fontello.ttf') format('truetype');
+    font-family: "fontello";
+    src: url("../resources/fonts/fontello.woff");
+    src: url("../resources/fonts/fontello.woff") format("woff"),
+        url("../resources/fonts/fontello.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
