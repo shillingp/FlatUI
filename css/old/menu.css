@@ -14,13 +14,15 @@
 .menu ul li p {
     display: block;
     text-transform: uppercase;
+    text-decoration: none;
     font-size: 13px;
     font-weight: 900;
     color: #b9b9b9;
     cursor: pointer;
     -webkit-transition: all 200ms ease-in;
-    -o-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
     position: relative;
 }
 .menu ul li ::before {

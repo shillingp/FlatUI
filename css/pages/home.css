@@ -15,6 +15,7 @@
 }
 
 
+
 .rowbox a {
     color: #ff6760;
     text-decoration: none;
@@ -45,9 +46,9 @@
 .rowbox .row span,
 .rowbox .rowtext h3 {
     -webkit-transition: all 200ms ease-in;
-    -o-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
 }
-.row:hover { color: #ff6760;}
-.row:hover .rowtext p { color: #616161;}
-
+.row:hover { color: #ff6760!important;}
+.row:hover p { color: #616161;}
