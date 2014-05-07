@@ -36,7 +36,6 @@ body {
 }
 .pagebreak .inner { padding: 10px inherit;}
 
-
 a {
     -webkit-transition: color 200ms ease-in;
     -moz-transition: color 200ms ease-in;
@@ -44,8 +43,6 @@ a {
     transition: color 200ms ease-in;
 }
 a:hover { color: #ff6760!important;}
-
-
 
 section { display: none;}
 section.select { display: block;}
