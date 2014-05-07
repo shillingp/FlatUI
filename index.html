@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/headfoot.css">
-        <link rel="stylesheet" href="css/menu.css">
-        <link rel="stylesheet" href="css/custom.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        
+        <link rel="stylesheet" href="css/pages.min.css">
+        <link rel="stylesheet" href="css/base.min.css">
+        
+        <link rel="stylesheet" href="css/pages/code.css">
+        
+        <script src="js/main.min.js"></script>
     </head>
     <body>
         <header>
@@ -15,23 +18,24 @@
                 </div>
                 <nav class="menu">
                     <ul>
-                        <li class="active"><p class="navlink">home</p></li>
-                        <li><p class="navlink">code</p></li>
-                        <li><p class="navlink">links</p></li>
-                        <li><p class="navlink">contact</p></li>
+                        <li class="active"><p class="navlink" data-nav="home">home</p></li>
+                        <li><p class="navlink" data-nav="code">code</p></li>
+                        <li><p class="navlink" data-nav="link">links</p></li>
+                        <li><p class="navlink" data-nav="contact">contact</p></li>
                     </ul>
                 </nav>
                 <div class="clear"></div>
             </div>
         </header>
-        <div class="pagewrap">
-            <div class="caption center">
-                <h1>Welcome to <strong>pshilling.co.uk</strong></h1>
-                <h2>A <em>clean</em>, <em>simple</em> <span class="color">&amp;</span> <em>straightforward</em> website.</h2>
-                <h2>For a pleasant time browsing.</h2>
+        <section data-nav="home" class="select">
+            <div class="pagewrap">
+                <div class="caption center">
+                    <h1>Welcome to <strong>pshilling.co.uk</strong></h1>
+                    <h2>A <em>clean</em>, <em>simple</em> <span class="color">&amp;</span> <em>straightforward</em> website.</h2>
+                    <h2>For a pleasant time browsing.</h2>
+                </div>
             </div>
-        </div>
-        <div class="pagebreak">
+            <div class="pagebreak">
                 <div class="inner rowbox">                    
                     <div class="row">
                         <span data-icon="800"></span>
@@ -55,12 +59,25 @@
                         </div>
                     </div>
                 </div>
-        </div>
-        <div class="pagewrap"></div>
-        <footer>
-            <div class="inner">
-                <p><a href="" class="colorlink">PShilling</a> is created and hosted by Peter Shilling</p>
             </div>
+        </section>
+        <section data-nav="code">
+            <div class="pagewrap"></div>
+            <div class="pagebreak"></div>
+            <div class="pagewrap"></div>
+        </section>
+        <section data-nav="link">
+            <div class="pagewrap"></div>
+            <div class="pagebreak"></div>
+            <div class="pagewrap"></div>
+        </section>
+        <section data-nav="contact">
+            <div class="pagewrap"></div>
+            <div class="pagebreak"></div>
+            <div class="pagewrap"></div>
+        </section>
+        <footer>
+            <p class="inner"><a href="" class="colorlink">PShilling Site</a> is created and hosted by Peter Shilling</p>
         </footer>
     </body>
 </html>
