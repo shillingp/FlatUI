@@ -5,13 +5,13 @@
     position: relative;
     overflow: inherit !important;
 }
-.menu ul li {
+.menu li {
     position: relative;
     display: inline-block;
     padding: 0;
     margin-left: 60px;
 }
-.menu ul li p {
+.menu li p {
     display: block;
     text-transform: uppercase;
     text-decoration: none;
@@ -25,7 +25,7 @@
     transition: all 200ms ease-in;
     position: relative;
 }
-.menu ul li ::before {
+.menu li ::before {
     content: "";
     display: block;
     position: absolute;
@@ -35,10 +35,10 @@
     left: -32px;
     background: #3d3d3d;
 }
-.menu ul li:first-child ::before {
+.menu li:first-child ::before {
     display: none;
 }
-.menu ul li.active p,
-.menu ul li p:hover {
+.menu li.active p,
+.menu li p:hover {
     color: #ff6760;
 }
