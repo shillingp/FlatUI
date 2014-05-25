@@ -49,7 +49,7 @@ svg {
     content: "<< ";
 }
 p a {
-    color: #ff6760;
+    color: #ff6760!important;
 }
 p a:hover {
     color: #616161!important;
