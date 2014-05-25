@@ -1,1 +1,26 @@
 /* CODE */
+.codepages {
+    padding: 2em 0 0;
+}
+.codepages article {
+    padding: 0.714em 2.143em;
+    margin-bottom: 4em;
+    background-color: #fdfdfd;
+    color: #464646;
+    border-radius: 2px;
+    border: 0 solid #fdfdfd;
+    -webkit-transition: color 50ms, border 50ms, margin 50ms;
+    -moz-transition: color 50ms, border 50ms, margin 50ms;
+    -o-transition: color 50ms, border 50ms, margin 50ms;
+    transition: color 50ms, border 50ms, margin 50ms;
+}
+.codepages p {
+    max-height: 8.571em;
+    line-height: 1.714em;
+    color: #464646!important;
+}
+.codepages article:hover {
+    margin: 0 -1em 4em;
+    border-width: 0 1em;
+    color: #ff6760;
+}
