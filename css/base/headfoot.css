@@ -1,24 +1,47 @@
-header, footer {
-    background-color: #262626!important;
+header,footer {
+    background-color: #262626!important
 }
 
 header {
-    color: #262626;
-    display: block;
-}
-header h1, header p { margin: 0!important;}
-header .inner { padding: 35px 0 29px;}
-header .logo {
-    float: left;
     color: #fff;
+    display: block;
+    margin-bottom: 2.143em
 }
-header .menu { float: right;}
-header .clear { clear: both;}
 
-footer { color: #bebebe;}
-footer .inner { padding: 10px 0;}
-footer .inner p { text-align: center;}
-footer .inner a {
+header h1,header p {
+    margin: 0!important
+}
+
+header .inner {
+    padding: 2.5em 0 2.071em
+}
+
+header .title {
+    float: left;
+    color: #fff
+}
+
+header .menu {
+    float: right
+}
+
+header .clear {
+    clear: both
+}
+
+footer {
+    color: #bebebe
+}
+
+footer p.inner {
+    padding: 0.714em 0
+}
+
+footer p.inner {
+    text-align: center
+}
+
+footer p.inner a {
     text-decoration: underline;
-    color: inherit;
+    color: #ff6760
 }

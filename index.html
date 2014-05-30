@@ -1,106 +1,134 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, user-scalable=no">
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 
-        <link rel="stylesheet" href="css/base.min.css">
-        <link rel="stylesheet" href="css/pages.min.css">
-        
-<!--        <script type="text/javascript" src="js/main.js"></script>-->
-        <script type="text/javascript" src="js/main.min.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="inner">
-                <div class="title">
-                    <h1>PShilling</h1>
-                </div>
-                <nav class="menu">
-                    <ul>
-                        <li class="active"><p class="navlink" data-nav="home">home</p></li>
-                        <li><p class="navlink" data-nav="code">code</p></li>
-                        <li><p class="navlink" data-nav="link">links</p></li>
-                        <li><p class="navlink" data-nav="contact">contact</p></li>
-                    </ul>
-                </nav>
-                <div class="clear"></div>
-            </div>
-        </header>
-        <section data-nav="home" class="select">
-            <div class="pagewrap">
-                <div class="caption center">
-                    <h1>Welcome to <strong>pshilling.co.uk</strong></h1>
-                    <h2>A <em>clean</em>, <em>simple</em> <span class="color">&amp;</span> <em>straightforward</em> website.</h2>
-                    <h2>For a pleasant time browsing.</h2>
-                </div>
-            </div>
-            <div class="pagebreak">
-                <div class="inner rowbox">                    
-                    <div class="row">
-                        <span data-icon="800"></span>
-                        <div class="rowtext">
-                            <h3>Design</h3>
-                            <p>The site has been made with design in mind. A flat graphical style makes for a pretty user interface. The site is weighted towards using the most standard CSS.</p>
-                        </div>
+		<link rel="stylesheet" href="css/base.min.css">
+		<link rel="stylesheet" href="css/pages.min.css">
+
+        <link rel="stylesheet" href="css/pages/contact.css">
+		
+<!--		<script type="text/javascript" src="js/main.js"></script>-->
+		<script type="text/javascript" src="js/main.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="inner">
+				<div class="title">
+					<h1>PShilling</h1>
+				</div>
+				<nav class="menu">
+					<ul>
+						<li class="active"><p class="navlink" data-nav="home">home</p></li>
+						<li><p class="navlink" data-nav="code">code</p></li>
+						<li><p class="navlink" data-nav="link">links</p></li>
+						<li><p class="navlink" data-nav="contact">contact</p></li>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			</div>
+		</header>
+		<section data-nav="home" class="select">
+			<div class="pagewrap">
+				<div class="caption center">
+					<h1>Welcome to <strong>pshilling.co.uk</strong></h1>
+					<h2>A <em>clean</em>, <em>simple</em> <span class="color">&amp;</span> <em>straightforward</em> website.</h2>
+					<h2>For a pleasant time browsing.</h2>
+				</div>
+			</div>
+			<div class="pagebreak">
+				<div class="inner rowbox">                    
+					<div class="row">
+						<span data-icon="800"></span>
+						<div class="rowtext">
+							<h3>Design</h3>
+							<p>The site has been made with design in mind. A flat graphical style makes for a pretty user interface. The site is weighted towards using the most standard CSS.</p>
+						</div>
+					</div>
+					<div class="row">
+						<span data-icon="802"></span>
+						<div class="rowtext">
+							<h3>Speed</h3>
+							<p>The site is simple and lightweight, it uses the least javascript possible. Making use of the optimized and efficient language of CSS to increase speed.</p>
+						</div>
+					</div>
+					<div class="row">
+						<span data-icon="801"></span>
+						<div class="rowtext">
+							<h3>Open Source</h3>
+							<p>The code for the site is available from the <a href="https://github.com/shillingp/FlatUI">GitHub repository</a>. Feel free to check it out, make a clone, fork the project, submit a pull request and watch the repository.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section data-nav="code">
+			<div class="pagewrap">
+				<div class="inner codepages">
+					<a href="pages/nonogram/nonogram.html">
+						<article>
+							<h2>Nonogram</h2>
+							<h5>HTML and Javascript Nonogram Game</h5>
+							<p>Detail and information on my HTML and Javascript SVG game. The workings and underlying information about how I coded and forged the game, in pure tasty vanilla Javascript. Data about the project can be found here for you to peruse.</p>
+						</article>
+					</a>
+					<a href="pages/scripting/scripting.html">
+						<article>
+							<h2>Scripting</h2>
+							<h5>Personal practices in javascript</h5>
+							<p>Article on my habits during javascript coding, be they good or bad. Personal script behaviours and why I do what I do and how I do it. A few tricks that I use to make my applications and websites.</p>
+						</article>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section data-nav="link">
+			<div class="pagewrap"></div>
+			<div class="pagebreak"></div>
+			<div class="pagewrap"></div>
+		</section>
+		<section data-nav="contact">
+			<div class="pagewrap">
+				<div class="inner chapter">
+					<p>If you would like any further information please feel free to contact me via the form below. Please fill out your name, email and any message that you have for me.</p>
+				</div>
+			</div>
+			<div class="pagebreak">
+				<div class="inner">
+					<form  method="post" action="resources/php/form.php" class="contact" name="contact" oninput="validateForm();">
+						<div class="name">
+							<span data-icon="810"></span>
+							<input type="text" name="name" placeholder="Name">
+						</div>
+						<div class="email">
+							<span data-icon="811"></span>
+							<input type="email" name="email" placeholder="Email">
+						</div>
+						<div class="message">
+							<span data-icon="809"></span>
+							<textarea name="message" placeholder="Type message here"></textarea>
+						</div>
+						<div>
+							<input type="submit" value="Send" name="submit" class="submit" disabled>
+						</div>
+						<input type="submit" value="" class="warning" disabled>
+					</form>
+				</div>
+			</div>
+			<div class="pagewrap">
+				<div class="inner chapter">
+                    <div class="social">
+                        <a href=""><span data-icon="803"></span></a>
+                        <a href=""><span data-icon="804"></span></a>
+                        <a href=""><span data-icon="805"></span></a>
+                        <a href="http://github.com/shillingp"><span data-icon="806"></span></a>
+                        <a href="mailto:p.shilling.ps@gmail.com"><span data-icon="809"></span></a>
                     </div>
-                    <div class="row">
-                        <span data-icon="802"></span>
-                        <div class="rowtext">
-                            <h3>Speed</h3>
-                            <p>The site is simple and lightweight, it uses the least javascript possible. Making use of the optimized and efficient language of CSS to increase speed.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <span data-icon="801"></span>
-                        <div class="rowtext">
-                            <h3>Open Source</h3>
-                            <p>The code for the site is available from the <a href="https://github.com/shillingp/FlatUI">GitHub repository</a>. Feel free to check it out, make a clone, fork the project, submit a pull request and watch the repository.</p>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </section>
-        <section data-nav="code">
-            <div class="pagewrap">
-                <div class="inner codepages">
-                    <a href="pages/nonogram/nonogram.html">
-                        <article>
-                            <h2>Nonogram</h2>
-                            <h5>HTML and Javascript Nonogram Game</h5>
-                            <p>Detail and information on my HTML and Javascript SVG game. The workings and underlying information about how I coded and forged the game, in pure tasty vanilla Javascript. Data about the project can be found here for you to peruse.</p>
-                        </article>
-                    </a>
-                    <a href="">
-                        <article>
-                            <h2>Foo Bar!!</h2>
-                            <h5>Hello World</h5>
-                            <p>Do sed illustriora, velit si vidisse est irure de qui magna ea tamen e eu est cohaerescant. Admodum varias quid qui aliqua ita commodo do dolor quo ipsum ex ullamco do sint est proident ut sint iudicem. Noster possumus praetermissum non doctrina amet eiusmod litteris. Tempor velit nulla ita illum est proident ea magna, duis in admodum de multos a ingeniis e minim fabulas. Offendit aut malis possumus si ex an elit malis velit. Hic fugiat instituendarum ea ut irure officia offendit, appellat iis quorum, do velit aute a officia. Hic ullamco transferrem o varias iudicem nescius.</p>
-                        </article>
-                    </a>
-                    <a href="">
-                        <article>
-                            <h2>Goodbye World!!</h2>
-                            <h5>Foo Bar</h5>
-                            <p>Quem occaecat o praesentibus, ea eram philosophari. Enim cohaerescant admodum quid ingeniis. Aut irure incididunt proident, velit an excepteur do aliqua, mentitum non commodo, nisi ex ut veniam incurreret ab qui quis appellat familiaritatem, si cillum eiusmod praesentibus, varias consectetur occaecat aute ullamco et incididunt amet multos laborum sint. Quo cillum nostrud a nulla probant aut ingeniis. Vidisse ad cillum litteris. Ea in velit eiusmod eu minim excepteur quibusdam. Summis nescius firmissimum, et hic magna minim anim e mandaremus quem varias doctrina fugiat qui aute ne officia ab quid qui eiusmod varias veniam quibusdam labore, deserunt te probant aut consequat culpa fore voluptate quorum sed legam incurreret si anim.</p>
-                        </article>
-                    </a>
-                </div>
-            </div>
-            <!--    <div class="pagebreak"></div>-->
-            <!--    <div class="pagewrap"></div>-->
-        </section>
-        <section data-nav="link">
-            <div class="pagewrap"></div>
-            <div class="pagebreak"></div>
-            <div class="pagewrap"></div>
-        </section>
-        <section data-nav="contact">
-            <div class="pagewrap"></div>
-            <div class="pagebreak"></div>
-            <div class="pagewrap"></div>
-        </section>
-        <footer>
-            <p class="inner"><a href="" class="colorlink">PShilling Site</a> is created and hosted by Peter Shilling</p>
-        </footer>
-    </body>
+			</div>
+		</section>
+		<footer>
+			<p class="inner"><a href="" class="colorlink">PShilling Site</a> is created and hosted by Peter Shilling</p>
+		</footer>
+	</body>
 </html>

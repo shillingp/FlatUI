@@ -3,42 +3,46 @@
     padding: 0;
     list-style-type: none;
     position: relative;
-    overflow: inherit !important;
-    color: #b9b9b9;
+    overflow: inherit!important;
+    color: #b9b9b9
 }
+
 .menu li {
     position: relative;
     display: inline-block;
     padding: 0;
-    margin-left: 60px;
+    margin-left: 4.286em
 }
+
 .menu li p {
     display: block;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 0.929em;
     font-weight: 900;
     cursor: pointer;
     -webkit-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
-    position: relative;
+    position: relative
 }
+
 .menu li ::before {
     content: "";
     display: block;
     position: absolute;
-    width: 4px;
-    height: 4px;
-    top: 11px;
-    left: -32px;
-    background: #3d3d3d;
+    width: 0.286em;
+    height: 0.286em;
+    top: 0.846em;
+    left: -2.286em;
+    background: #3d3d3d
 }
+
 .menu li:first-child ::before {
-    display: none;
+    display: none
 }
-.menu li.active p,
-.menu li p:hover {
-    color: #ff6760;
+
+.menu li.active p,.menu li p:hover {
+    color: #ff6760
 }

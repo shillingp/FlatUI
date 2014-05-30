@@ -1,48 +1,91 @@
-*, *:before, *:after {
+*,*:before,*:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
-html, body {
+html,body {
     margin: 0;
-    padding: 0;
+    padding: 0
 }
+
 body {
     -webkit-font-smoothing: antialiased;
-    font: 400 14px/24px "Lato", sans-serif;
+    font: 400 14px/24px "Lato",sans-serif;
     color: #616161;
     background-color: #2a2a2a;
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 
 .inner {
     margin: 0 15%;
-    padding: 60px 0;
+    padding: 4.286em 0
 }
 
 .pagewrap {
     position: relative;
     padding: 0;
     overflow: hidden;
-    color: #d9d9d9;
+    color: #d9d9d9
 }
+
 .pagebreak {
     border: solid #959595;
-    border-width: 5px 0;
+    border-width: 0.357em 0;
     background-color: #f6f6f6;
-    color: #616161;
+    color: #616161
 }
-.pagebreak .inner { padding: 10px inherit;}
+
+.pagebreak .inner {
+    padding: 0.714em
+}
+
+.inner.chapter {
+    padding: 1em
+}
+
+.title {
+    color: #fff
+}
 
 a {
+    text-decoration: none;
     -webkit-transition: color 200ms ease-in;
     -moz-transition: color 200ms ease-in;
     -o-transition: color 200ms ease-in;
-    transition: color 200ms ease-in;
+    transition: color 200ms ease-in
 }
-a:hover { color: #ff6760!important;}
 
-section { display: none;}
-section.select { display: block;}
+a:visited {
+    color: inherit
+}
+
+a:hover {
+    color: #ff6760
+}
+
+a.colorlink {
+    color: #ff6760
+}
+
+a.colorlink:visited {
+    color: #ff6760
+}
+
+a.colorlink:hover {
+    color: inherit
+}
+
+section {
+    display: none;
+    -webkit-animation: pageswitch .5s ease-out;
+    -moz-animation: pageswitch .5s ease-out;
+    -ms-animation: pageswitch .5s ease-out;
+    -o-animation: pageswitch .5s ease-out;
+    animation: pageswitch .5s ease-out
+}
+
+section.select {
+    display: block
+}

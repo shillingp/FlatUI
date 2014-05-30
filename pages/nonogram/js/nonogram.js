@@ -189,11 +189,22 @@ function nonogram() {
         else if (mouseState === true && event.button === 2) toggleFlag();
     }
 
-    function mouseEvent() {
+    function addEvents() {
         var grid = document.querySelectorAll("svg>rect");
         for (var i=0;i<grid.length;i++) {
             grid[i].onmousedown = mouseClick;
             grid[i].onmouseover = mouseDrag;
+            grid[i].addEventListener("touchstart", touchHandler, false);
+            grid[i].addEventListener("touchend", touchHandler, false);
+        }
+    }
+
+    function touchHandler() {
+        var type = "";
+        switch (event.type) {
+            case "touchstart": type="mousedown";break;
+            case "touchend": type="mouseup";break;
+            default: return;
         }
     }
 
@@ -214,7 +225,7 @@ function nonogram() {
         clearGrid();
         drawGrid();
         writeClues();
-        mouseEvent();
+        addEvents();
     }
 
     gameManager();
