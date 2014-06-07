@@ -1,5 +1,4 @@
 /* CONTACT */
-
 .contact div {
 	font-size: 2em;
 	margin-bottom: 0.2em;
@@ -14,6 +13,10 @@
 	padding-left: 4em;
 	border: 2px solid #efefef;
 	background-color: #fff;
+	-webkit-transition: border-color 200ms ease;
+	-moz-transition: border-color 200ms ease;
+	-o-transition: border-color 200ms ease;
+	transition: border-color 200ms ease;
 }
 .contact textarea {
 	height: 10.6em;
@@ -24,7 +27,7 @@
 .contact textarea:focus,
 .contact .submit:hover {
 	outline: none;
-	border: 2px solid #ff6760;
+	border-color: #ff6760;
 }
 input[disabled][value=""] {
 	display: none;

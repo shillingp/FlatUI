@@ -10,6 +10,7 @@ function nonogram() {
     gridStart = tileSize*2;
     gridSize = 10;
     bias = 0.75;
+//	bias = Math.pow(gridSize, -gridSize*1e-2);	Scales with grid
     solGrid = [];
     currGrid = [];
 
@@ -212,7 +213,13 @@ function nonogram() {
         document.onmousedown = function(){mouseState=true;};
         document.onmouseup = function(){mouseState=false;};
         svg.parentElement.oncontextmenu = function(){return false;};
-        svg.style.width = svg.style.height = gridStart+(tileSize+gapWidth)*gridSize;
+		var maxSize = gridStart + (tileSize + gapWidth) * gridSize;
+        svg.style.maxWidth = svg.style.maxHeight = maxSize;
+		setAttributes(svg,
+					  {
+						  "viewBox": "0,0,"+maxSize+","+maxSize,
+						  "preserveAspectRatio": "xMidYMid meet"
+					  });
         setAttributes(document.getElementsByClassName("svgBanner")[0],
                       {
                           "onclick": "nonogram();",
