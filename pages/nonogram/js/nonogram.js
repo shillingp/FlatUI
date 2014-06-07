@@ -10,6 +10,7 @@ function nonogram() {
     gridStart = tileSize*2;
     gridSize = 10;
     bias = 0.75;
+//	bias = Math.pow(gridSize, -gridSize*1e-2);	Scales with grid
     solGrid = [];
     currGrid = [];
 
@@ -189,11 +190,22 @@ function nonogram() {
         else if (mouseState === true && event.button === 2) toggleFlag();
     }
 
-    function mouseEvent() {
+    function addEvents() {
         var grid = document.querySelectorAll("svg>rect");
         for (var i=0;i<grid.length;i++) {
             grid[i].onmousedown = mouseClick;
             grid[i].onmouseover = mouseDrag;
+            grid[i].addEventListener("touchstart", touchHandler, false);
+            grid[i].addEventListener("touchend", touchHandler, false);
+        }
+    }
+
+    function touchHandler() {
+        var type = "";
+        switch (event.type) {
+            case "touchstart": type="mousedown";break;
+            case "touchend": type="mouseup";break;
+            default: return;
         }
     }
 
@@ -201,7 +213,13 @@ function nonogram() {
         document.onmousedown = function(){mouseState=true;};
         document.onmouseup = function(){mouseState=false;};
         svg.parentElement.oncontextmenu = function(){return false;};
-        svg.style.width = svg.style.height = gridStart+(tileSize+gapWidth)*gridSize;
+		var maxSize = gridStart + (tileSize + gapWidth) * gridSize;
+        svg.style.maxWidth = svg.style.maxHeight = maxSize;
+		setAttributes(svg,
+					  {
+						  "viewBox": "0,0,"+maxSize+","+maxSize,
+						  "preserveAspectRatio": "xMidYMid meet"
+					  });
         setAttributes(document.getElementsByClassName("svgBanner")[0],
                       {
                           "onclick": "nonogram();",
@@ -214,7 +232,7 @@ function nonogram() {
         clearGrid();
         drawGrid();
         writeClues();
-        mouseEvent();
+        addEvents();
     }
 
     gameManager();

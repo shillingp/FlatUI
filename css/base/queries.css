@@ -1,34 +1,38 @@
-@media only screen and (max-width: 800px) {
-    html, body {
-        font-size: 12px;
+@media only screen and (max-width:800px) {
+    html,body {
+        font-size: 12px
     }
     .inner {
-        margin: 0 15px;
+        margin: 0 15px
     }
 }
-@media only screen and (max-width: 640px) {
-    html, body {
+@media only screen and (max-width:640px) {
+    html,body {
         font-size: 10px;
+		text-rendering: optimizeSpeed
     }
     .inner {
-        margin: 0;
-    }
-    div.caption {
-        font-size: 0.8em;
+        margin: 0
     }
     header .inner {
-        margin: 0 5px;
+        margin: 0 5px
     }
     header .menu li {
-        margin-left: 2em;
+        margin-left: 2em
     }
-    header .menu li ::before {
-        top: 1.2em;
-        left: -1.286em;
+    header .menu li::before {
+        top: 0.8em;
+        left: -1.286em
     }
-}
-@media only screen and (max-width: 450px) {
     div.caption {
-        font-size: 0.7em;
+        font-size: 0.8em
+    }
+    .rowbox .rowtext {
+        padding: 0
+	}
+}
+@media only screen and (max-width:450px) {
+    div.caption {
+        font-size: 0.5em
     }
 }
