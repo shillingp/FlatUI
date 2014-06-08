@@ -5,6 +5,12 @@ section {
 .title {
     margin-bottom: 2.071em;
 }
+.title h1::before {
+    content: "<< ";
+}
+.title h1::first-letter{
+	letter-spacing: -0.2em;
+}
 /* PAGE */
 rect[flag="1"] {
     fill: #ffcece;
@@ -43,14 +49,4 @@ svg {
 .svgContainer {
     padding: 0;
     text-align: center;
-}
-
-.title h1::before {
-    content: "<< ";
-}
-p a {
-    color: #ff6760!important;
-}
-p a:hover {
-    color: #616161!important;
 }

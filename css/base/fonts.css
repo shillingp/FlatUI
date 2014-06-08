@@ -4,7 +4,7 @@
     font-family: "fontello";
     src: url("../resources/fonts/fontello.woff");
     src: url("../resources/fonts/fontello.woff") format("woff"),
-        url("../resources/fonts/fontello.ttf") format("truetype");
+		 url("../resources/fonts/fontello.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -26,3 +26,5 @@
 [data-icon="807"]::before { content: "\e807"}
 [data-icon="808"]::before { content: "\e808"}
 [data-icon="809"]::before { content: "\e809"}
+[data-icon="810"]::before { content: "\e80a"}
+[data-icon="811"]::before { content: "\e80b"}
