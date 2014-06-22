@@ -12,6 +12,7 @@
 	height: 4em;
 	padding-left: 4em;
 	border: 2px solid #efefef;
+	font-family: "lato";
 	background-color: #fff;
 	-webkit-transition: border-color 200ms ease;
 	-moz-transition: border-color 200ms ease;
@@ -32,9 +33,11 @@
 input[disabled][value=""] {
 	display: none;
 }
-.contact input[disabled],
-.contact .submit {
+.contact input[disabled] {
 	padding-left: 0;
+	color: #ff6760;
+}
+.contact input.submit {
 	color: #999;
 }
 .contact .submit:hover {
@@ -44,17 +47,14 @@ input[disabled][value=""] {
 	border-color: #ff6760;
 }
 
-
-
 .social {
     text-align: center;
+	padding: 0;
+	margin: 0 auto;
 }
 .social span {
-    font-size: 4em;
+    font-size: 3.4em;
 }
-
-
-
 
 @media only screen and (max-width: 800px) {
 	.contact input,

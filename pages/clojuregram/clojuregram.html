@@ -21,7 +21,7 @@
 		<section>
 			<div class="pagewrap">
 				<div class="inner chapter">
-					<p>The clojuregram code is based around my SVG and Javascript version of the game Nonogram. An explanation of the game and code can be found <a class="colorlink" href="../nonogram/nonogram.html">here</a> and the source code is <a class="colorlink" href="https://github.com/shillingp/Nonogram">here</a>. Clojuregram uses Clojurescript which is a Clojure language that compiles to Javascript. </p>
+					<p>The clojuregram code is based around my SVG and Javascript version of the game Nonogram. An explanation of the game and its code can be found <a class="colorlink" href="../nonogram/nonogram.html">here</a>. Clojuregram uses Clojurescript which is a Clojure language with all its lispy goodness that compiles to Javascript. Source code can be found <a class="colorlink" href="http://github.com/shillingp/Clojuregram">here</a> at its GitHub repository.</p>
 				</div>
 			</div>
 			<div class="pagebreak">
@@ -47,7 +47,7 @@
 <pre><code>(let [counter (atom 0) g gridSize]
 	(doseq [y (range g) :while (&lt; @counter (* g g))
 			x (range g) :while (&lt; @counter (* g g))]
-		(swap! @counter inc))</code></pre>
+		(swap! @counter inc))</pre></code>
 <pre><code>[x y] => [6 0] [7 0] [8 0] [9 0] [0 1] [1 1] [2 1] [3 1]</code></pre>
 				</div>
 			</div>
