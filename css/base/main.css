@@ -86,6 +86,23 @@ section {
     animation: pageswitch .5s ease-out
 }
 
-section.select {
+section.select, .pages section {
     display: block
+}
+
+.pages .title {
+    margin-bottom: 2.071em;
+}
+
+.pages .title h1::before {
+    content: "<< ";
+}
+
+.pages .title h1::first-letter{
+	letter-spacing: -0.2em;
+}
+
+pre, code {
+	font-size: 1.04em;
+	line-height: 1.04em;
 }
