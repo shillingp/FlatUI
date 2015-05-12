@@ -1,16 +1,3 @@
-/* BASE */
-section {
-    display: block;
-}
-.title {
-    margin-bottom: 2.071em;
-}
-.title h1::before {
-    content: "<< ";
-}
-.title h1::first-letter{
-	letter-spacing: -0.2em;
-}
 /* PAGE */
 rect[flag="1"] {
     fill: #ffcece;

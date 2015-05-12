@@ -50,15 +50,12 @@ body {
 }
 
 a {
+    color: inherit;
     text-decoration: none;
     -webkit-transition: color 200ms ease-in;
     -moz-transition: color 200ms ease-in;
     -o-transition: color 200ms ease-in;
     transition: color 200ms ease-in
-}
-
-a:visited {
-    color: inherit
 }
 
 a:hover {
@@ -86,6 +83,23 @@ section {
     animation: pageswitch .5s ease-out
 }
 
-section.select {
+section.select, .pages section {
     display: block
+}
+
+.pages .title {
+    margin-bottom: 2.071em;
+}
+
+.pages .title h1::before {
+    content: "<< ";
+}
+
+.pages .title h1::first-letter{
+	letter-spacing: -0.2em;
+}
+
+pre, code {
+	font-size: 1.04em;
+	line-height: 1.04em;
 }

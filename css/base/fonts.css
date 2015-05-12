@@ -11,10 +11,10 @@
 [data-icon]::before {
     display: inline-block;
     width: 1em;
-    margin: inherit .2em;
+    margin: .2em;
     text-align: center;
     text-transform: none;
-    font: 120%/1em "fontello", sans-serif;
+    font: 1.2em/1em "fontello", sans-serif;
 }
 [data-icon="800"]::before { content: "\e800"}
 [data-icon="801"]::before { content: "\e801"}
