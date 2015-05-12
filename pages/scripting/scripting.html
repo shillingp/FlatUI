@@ -5,7 +5,7 @@
 		<link type="text/css" rel="stylesheet" href="css/style.min.css">
 		<link type="text/css" rel="stylesheet" href="../../resources/plugins/highlight/github.css">
 		<script type="text/javascript" src="../../resources/plugins/highlight/highlight.js"></script>
-		<script type="text/javascript" src="js/script.min.js"></script>
+		<script>hljs.configure({tabReplace:"    "});hljs.initHighlightingOnLoad();</script>
 	</head>
 	<body>
 		<header>
@@ -41,23 +41,24 @@
 			</div>
 			<div class="pagebreak">
 				<div class="inner">
-<pre><code>function addAttributes(elem, attrs) {
+<pre><code>function setAttributes(elem, attrs) {
 	for (var key in attrs) {
 		elem.setAttribute(key, attrs[key]);
 	}
 }
-function applyStyle(elem, attrs) {
+function setStyle(elem, attrs) {
 	for (var key in attrs) {
 		elem.style[key] = attrs[key];
 	}
-}</code></pre>
-<pre><code>addAttributes(element,
+}
+
+setAttributes(element,
 			  {
 			  	"x": 100,
 				"y": 250,
 				"fill": "#ff6760"
 			  });
-applyStyles(element,
+setStyles(element,
 			{
 			  "display": "inline-block",
 			  "width": "400px"

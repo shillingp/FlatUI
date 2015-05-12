@@ -7,6 +7,7 @@ function navLink() {
 		navlinks[i].addEventListener("click", navChange);
 	}
 }
+
 function navChange() {
 	var page = event.target.dataset.nav;
 	document.querySelector(".menu li.active").classList.remove("active");
@@ -14,11 +15,13 @@ function navChange() {
 	document.querySelector("section.select").classList.remove("select");
 	document.querySelector("section[data-nav="+page+"]").classList.add("select");
 }
+
 document.onreadystatechange = function() {
 	if (document.readyState == "complete") {
 		navLink();
 	}
 };
+
 function formFeedback(elem, message) {
 	if (message) {
 		elem.previousElementSibling.style.color = "#ff6760";
@@ -28,6 +31,7 @@ function formFeedback(elem, message) {
 		elem.previousElementSibling.title = "";
 	}
 }
+
 function formHandler(form, field) {
 	var x = form[field].value,
 		atpos, dotpos;
@@ -49,6 +53,7 @@ function formHandler(form, field) {
 		default: return true;
 	}
 }
+
 function validateForm() {
 	var x = document.forms["contact"],
 		a = [], msg;

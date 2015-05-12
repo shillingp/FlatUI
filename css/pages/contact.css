@@ -44,37 +44,11 @@ input[disabled][value=""] {
 	border-color: #ff6760;
 }
 
-
-
 .social {
     text-align: center;
+/*	padding: 0;*/
+/*	margin: 0 auto;*/
 }
 .social span {
     font-size: 4em;
-}
-
-
-
-
-@media only screen and (max-width: 800px) {
-	.contact input,
-	.contact textarea {
-		height: 3.4em;
-		padding-left: 3.4em;
-	}
-	.contact textarea {
-		height: 9em;
-		padding-top: 0.9em;
-	}
-}
-@media only screen and (max-width: 640px) {
-	.contact input,
-	.contact textarea {
-		height: 3em;
-		padding-left: 3em;
-	}
-	.contact textarea {
-		height: 8em;
-		padding-top: 0.6em;
-	}
 }
