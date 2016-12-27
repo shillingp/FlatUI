@@ -24,9 +24,8 @@ function nonogram() {
         return document.createElementNS("http://www.w3.org/2000/svg", elem);
     }
 
-    function drawTile(x, y, sol, color) {
+    function drawTile(x, y, sol) {
         var tile = svgCreate("rect");
-        if (!color) color = "#eaeaea";
         setAttributes(tile,
                       {
                           "x": x + gridStart,
@@ -36,7 +35,7 @@ function nonogram() {
                           "sol": sol,
                           "curr": 0,
                           "flag": 0,
-                          "fill": color
+                          "fill": "#eaeaea"
                       });
         svg.appendChild(tile);
     }
